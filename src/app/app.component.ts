@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
+import { PageRoutes } from './enums/page-routes.enum';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,14 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'delivery-food';
+export class AppComponent implements OnInit {
+
+  constructor(
+    private readonly router: Router
+  ){
+  }
+
+  public ngOnInit(): void {
+      void this.router.navigate([PageRoutes.HOME])
+  }
 }
