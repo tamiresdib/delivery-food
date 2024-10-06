@@ -2,8 +2,8 @@
   "name": "delivery-food",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng", 
-    "start": "ng serve",
+    "ng": "ng",
+    "start": "json-server --watch src/data.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -22,6 +22,7 @@
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.0",
     "express": "^4.18.2",
+    "json-server": "^1.0.0-beta.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -40,5 +41,10 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
-  }
+  },
+  "description": "Delivery Food",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

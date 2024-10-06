@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { PageRoutes } from './enums/page-routes.enum';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,6 @@ import { PageRoutes } from './enums/page-routes.enum';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
-
-  constructor(
-    private readonly router: Router
-  ){
-  }
-
-  public ngOnInit(): void {
-      void this.router.navigate([PageRoutes.HOME])
-  }
+export class AppComponent {
 }
+ 
